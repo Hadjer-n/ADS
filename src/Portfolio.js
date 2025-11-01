@@ -71,10 +71,10 @@ const Portfolio = () => {
     };
   }, []);
 
-  const handleCardClick = (cardId) => {
+/*  const handleCardClick = (cardId) => {
     setClickedCard(cardId);
     setTimeout(() => setClickedCard(null), 600);
-  };
+  };*/
 
   const toggleAnimationMode = () => {
     setAnimationMode(animationMode === '3d' ? '2d' : '3d');
@@ -273,7 +273,7 @@ const Portfolio = () => {
               <div 
                 key={index}
                 className={`area-card ${clickedCard === `area-${index}` ? 'click-animation' : ''}`}
-                onClick={() => handleCardClick(`area-${index}`)}
+             
               >
                 <div className="area-icon">
                   {area.title.charAt(0)}
